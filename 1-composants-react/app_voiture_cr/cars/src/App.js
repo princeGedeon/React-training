@@ -12,10 +12,17 @@ export default class App extends Component {
     color:"green"
   
   };
+  changeTitle=(e)=>{
+    this.setState({
+        title:"Mon nouveau titre",
+    })
+}
   render() {
     return (
       <div className='App'>
         <Mycars color={this.state.color} title={this.state.title}/>
+
+        <button onClick={this.changeTitle}>Changer en dure</button>
       </div>
     )
   }
