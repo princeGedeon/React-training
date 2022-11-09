@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 import Cars from './Cars';
+import Myheader from './Myheader';
+import Wrapper from './Wrapper';
 class Mycars extends Component {
+
+    state={
+        cars: ["Ford","Mercedes","Peugeot"]
+    }
     render() {
         return (
             <div>
-                <h1>{this.props.title}</h1>
+                <Wrapper>
+                <Myheader
+               
+                >{this.props.title}</Myheader>
+                </Wrapper>
 
                 <div>
                     <Cars marque="Peugeot" couleur="Bleu" />

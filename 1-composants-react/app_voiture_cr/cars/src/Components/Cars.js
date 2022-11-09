@@ -1,17 +1,19 @@
 import React from 'react';
-
+import Wrapper from './Wrapper';
 const Cars = ({marque,couleur}) => {
     const colorInfo= couleur?( <p>Couleur : {couleur} </p>):(<p>Couleur : Néant</p>);
-    return (
-        <div className='cars' style={ {
-            backgroundColor: 'pink',
-            width:'300px',
-            padding:"15px",
-            margin: '5px auto'
-        }}>
-            <p>Marque  : {marque} </p>
-            {colorInfo}
-        </div>
+    return marque && (
+        
+
+         <Wrapper>
+                
+
+
+                <p>Marque  : {marque} </p>
+                {colorInfo}
+
+            </Wrapper>
+        
     );
 }
 
