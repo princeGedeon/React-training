@@ -12,6 +12,14 @@ export default class App extends Component {
     color:"green"
   
   };
+
+  inputTitle=(e)=>{
+    this.setState(
+      {
+        title:e.target.value,
+      }
+    )
+  }
   changeTitle=(e)=>{
     this.setState({
         title:"Mon nouveau titre",
@@ -23,6 +31,7 @@ export default class App extends Component {
         <Mycars color={this.state.color} title={this.state.title}/>
 
         <button onClick={this.changeTitle}>Changer en dure</button>
+        <input onChange={this.inputTitle} type="text" name="title" id="uno" />
       </div>
     )
   }

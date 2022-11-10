@@ -3,11 +3,7 @@ import Cars from './Cars';
 import Myheader from './Myheader';
 import Wrapper from './Wrapper';
 class Mycars extends Component {
-    changeTitle=(e)=>{
-        this.setState({
-            title:"Mon nouveau titre",
-        })
-    }
+   
     addStyle=(e)=>{
         if (e.target.classList.contains('styled'))
         {
@@ -38,7 +34,7 @@ class Mycars extends Component {
                     <Cars marque="BMW" />
                     <Cars marque="Toyota" couleur="Rouge"/>
                 </div>
-                <button onClick={this.changeTitle}>Changer en dure</button>
+                
             </div>
 
         );
