@@ -3,11 +3,11 @@ import './App.css';
 import Mycars from './Components/Mycars';
 
 import React, { Component } from 'react'
-
+import Welcome from './Components/Welcome';
 export default class App extends Component {
  
   state={
-
+  
     title:"Mon catalogue de voitures",
     color:"green"
   
@@ -28,10 +28,10 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Mycars color={this.state.color} title={this.state.title}/>
+        <Welcome/>
+        <Mycars color={this.state.color}  title={this.state.title}/>
 
-        <button onClick={this.changeTitle}>Changer en dure</button>
-        <input onChange={this.inputTitle} type="text" name="title" id="uno" />
+        
       </div>
     )
   }
