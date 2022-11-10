@@ -3,8 +3,10 @@ import './App.css';
 import Mycars from './Components/Mycars';
 
 import React, { Component } from 'react'
+import Maman from './Components/Maman';
 import Welcome from './Components/Welcome';
 export default class App extends Component {
+
  
   state={
   
@@ -28,10 +30,10 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Welcome/>
-        <Mycars color={this.state.color}  title={this.state.title}/>
+        {/* <Welcome/>
+        <Mycars color={this.state.color}  title={this.state.title}/> */}
 
-        
+        <Maman />
       </div>
     )
   }
