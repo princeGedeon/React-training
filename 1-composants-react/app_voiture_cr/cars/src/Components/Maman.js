@@ -12,6 +12,7 @@ class Maman extends Component {
             })
     }
     reponseToto=()=>{
+      
         this.setState({
             messageToto:"D'accord maman"
         })
@@ -26,7 +27,7 @@ class Maman extends Component {
                 <p>{this.state.messageMaman}</p>
                 <hr />
 
-                <Toto name="toto" lestate={this.state}/>
+                {/* <Toto name="toto" reponse={this.state.messageToto} reponseToto={this.reponseToto} lestate={this.state}/> */}
             </div>
         );
     }

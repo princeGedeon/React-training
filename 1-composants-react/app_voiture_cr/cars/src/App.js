@@ -33,7 +33,8 @@ export default class App extends Component {
         {/* <Welcome/>
         <Mycars color={this.state.color}  title={this.state.title}/> */}
 
-        <Maman />
+        <h1>sqq</h1>
+        <Maman/>
       </div>
     )
   }
