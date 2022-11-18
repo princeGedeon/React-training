@@ -5,7 +5,7 @@ import Display from './components/Display';
 function App() {
   return (
     <div className="App">
-     <Display/>s
+     <Display/>
     </div>
   );
 }
