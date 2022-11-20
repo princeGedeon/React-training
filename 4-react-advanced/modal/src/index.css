@@ -32,6 +32,9 @@ code {
   justify-content: center;
 }
 
+.input:focus{
+  background-color: yellow;
+}
 
 .modal>div{
   width: 60%;

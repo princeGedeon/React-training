@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
+import ComponentRef from './Components/Component_ref';
 import Modal from './Components/Modal';
 class App extends Component {
 
@@ -8,6 +9,8 @@ class App extends Component {
     this.state = {
        showModal:false,
     }
+
+    this.refComp=createRef();
   }
 
   handleshow=()=>{
@@ -21,15 +24,19 @@ class App extends Component {
       showModal:false
     })
   }
-  
+  handleClick=()=>{
+    this.refComp.current.addFocus();
+  }
   
   render() {
 
     const modal=this.state.showModal && <Modal close={this.handleHide}/>
     return (
       <div className="App">
-      <button onClick={()=>this.handleshow()}>Afficher le modal</button>
-       {modal}
+      {/* <button onClick={()=>this.handleshow()}>Afficher le modal</button>
+       {modal} */}
+       <button onClick={this.handleClick}>Valider</button>
+       <ComponentRef ref={this.refComp}/>
      </div>
     );
   }
