@@ -31,6 +31,9 @@ function Menu() {
       <li>
         <NavLink to="/community" >Community</NavLink>
       </li>
+      <li>
+        <NavLink to="/todo" >Todos</NavLink>
+      </li>
     </ul>
   </div>
   </div>
